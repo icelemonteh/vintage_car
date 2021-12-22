@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./css/style.css">
+
+<title>Vintage Car</title>
+</head>
+<body>
+
+    <!-- Navbar section -->    
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="./images/logos/VC-logos_black.png" alt="logo"></a>
+                </div>
+
+                <div class="navbar">                
+                    <div class="icon-bar" onclick="Show()">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    
+                    <ul id="nav-lists">
+                        <li class="close"><span onclick="Hide()">×</span></li>
+                        <li><a href="#cars">Cars</a></li>
+                        <li><a href="#enquiries">Enquiries</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>            
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- Section 2: Heading -->
+    <div class="header"></div>
+        <h1>Vintage cars for hire</h1>
+
+    <!-- <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem repudiandae blanditiis odit voluptate sapiente ab laborum aut dolore quam ipsam reiciendis illo, iure quia, minus eum eligendi laboriosam recusandae!</p>
+    </div> -->
+
+    <!-- Section 3: Car Cards -->
+    <div id="cars"></div>
+    <div class="cars">
+        <h2>Car Listings</h2>        
+
+        <div class="card-container">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                      <img src="./images/car (1).jpg" alt="car 1" style="width:100%">
+                      <h4>Vintage Car 1</h4>
+                      <p>Car Type</p>
+                      <p>Year: 1950</p>
+                    </div>
+                  </div>
+                
+                 <div class="column">
+                    <div class="card">
+                      <img src="./images/car (2).jpg" alt="car 2" style="width:100%">
+                      <h4>Vintage Car 2</h4>
+                      <p>Car Type</p>
+                      <p>Year: 1950</p>
+                    </div>
+                  </div>
+              
+                 <div class="column">
+                    <div class="card">
+                      <img src="./images/car (3).jpg" alt="car 3" style="width:100%">
+                      <h4>Vintage Car 3</h4>
+                      <p>Car Type</p>
+                      <p>Year: 1950</p>
+                    </div>
+                  </div>
+                
+                <div class="column">
+                  <div class="card">
+                    <img src="./images/car (4).jpg" alt="car 4" style="width:100%">
+                    <h4>Vintage Car 4</h4>
+                    <p>Car Type</p>
+                    <p>Year: 1950</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    
+
+
+    <!-- Section 4: Contact Form -->
+    <div id="enquiries"></div>
+    <div class="form-container">
+        <h3>Enquire about a car</h3>
+        <form action="action_page.php" method="post">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Full Name</label>
+            </div>
+            <div class="col-50">
+              <input type="text" id="fname" name="fullname" placeholder="Your name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email Address</label>
+            </div>
+            <div class="col-50">
+              <input type="email" id="email" name="email" placeholder="Your email..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="car">Choose a car</label>
+            </div>
+            <div class="col-50">
+              <select id="car" name="car">
+                <option value="select-car">Select a car</option>
+                <option value="car-1">Car 1</option>
+                <option value="car-2">Car 2</option>
+                <option value="car-3">Car 3</option>
+                <option value="car-4">Car 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="comments">Comments</label>
+            </div>
+            <div class="col-50">
+              <textarea id="comments" name="comments" placeholder="Your Message" style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+    </div>
+
+
+
+
+    <!-- Section 5: Contact Details + Map -->
+    <div id="contact"></div>
+    <div class="contact">
+        <h3>Contact</h3>
+        <p>Address: 27 Carlisle Street, St Kilda, VIC, 3182</p>
+        <p>Phone: (03) 9000 0000</p>
+        <p>Email: contact@vc.com.au</p>
+        
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.7036439363014!2d144.9786778155056!3d-37.86722414487766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66867aea2d7d5%3A0x90052fba988075d6!2s27%20Carlisle%20St%2C%20St%20Kilda%20VIC%203182!5e0!3m2!1sen!2sau!4v1640141348619!5m2!1sen!2sau" width="100%" height="440px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+
+
+    <!-- Section 6: Footer -->
+    <footer>
+        <p>Copyright ©️ LL. All rights reserved 2021  </p>
+    </footer>
+
+
+
+
+
+
+<!-- Section: Script -->
+<script>
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+</body>
+</html>
